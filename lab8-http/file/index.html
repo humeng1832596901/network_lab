@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>submit</title>
+    </head>
+
+    <script type="text/javascript">
+        /**
+        * 重置
+         */
+        function register() {
+            window.location.href = './register.html'; 
+            // 如果需要在新窗口打开注册界面；
+            // window.open('Untitled-2.html');
+            // 如果需要在当前窗口打开登录界面
+            //window.location.href = 'Untitled-2.html';
+
+        }
+    </script>
+
+    <style>
+        .box{
+            position: fixed;
+            width: 200px;
+            height: 150px;
+            top:50%;
+            left: 50%;
+            margin-top: -75px;
+            margin-left:-100px ;
+        }
+    </style>
+    <body>
+        <form method="GET">
+            <div class="box" align="center">
+                <div>user: <input type="text" value="" name="user"/></div>
+                <br/>
+                <div>password: <input type="password" value="" name="pwd"/></div>
+                <br/>
+                <div>	
+                    sex: <select name="sex">
+                        <option>male</option>
+                        <option>female</option>
+                    </select>
+                </div>
+                <br/>
+                <div>
+                    <input type="submit" value="submit"/>
+                    <input type="reset"  value="reset" />
+                    <input type="button" value="register" onclick="register()"/>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
